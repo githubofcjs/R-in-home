@@ -7,14 +7,16 @@ best<-function(state, outcome){
   }
   
   if(state == "heart attacck"){
-   a<-as.numeric(flags[[11]])
-   b<-a[a==min(a)]
-   f<-as.factor(b)
+    a<-as.numeric(flags[[11]])
   }
   else if(state == "heart failure"){
-    a<-flags[[17]] 
+    a<-as.numeric(flags[[17]])
   }
   else if(state == "pneumonia"){
-    a<-flags[[23]]
+    a<-as.numeric(flags[[23]])
   }
+  b<-which(a == min(a))
+  c<-flags[[2]]
+  hospital_name_list<-c[b]
+  hospital_name_list
 }
