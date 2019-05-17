@@ -1,4 +1,4 @@
-The file 'need_data.txt' is the data set I submitted
+The file 'tidydata.txt' is the data set I submitted
 
 These data files I used were download from the link which coursera offered.Before the programming code run, we assumed that the data package had been unziped and the folder 'UCI HAR Dataset' had been put into current workspace directory.
 

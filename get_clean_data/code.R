@@ -36,5 +36,6 @@ function(directory = 'UCI HAR Dataset')
   description<-sub('^f','The (after Fast Fourier Transform)',description)
   #其他手动修改（revise others by hand）
   code_book<-paste(X_name$V2[index],description,sep = ': ')
+  rbind(code_book,'ACT: activity labels','ID_ofVolunteer: the number of the volunteer')
   write.table(code_book, 'code_book.md',row.names = FALSE,col.names = FALSE,quote = FALSE)
 }
