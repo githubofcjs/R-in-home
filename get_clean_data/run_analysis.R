@@ -22,5 +22,5 @@ run_analysis<-function(directory = 'UCI HAR Dataset')
   #add the names of 'y' and 'subject' to the last name set
   #and use them
   names(all_data)<-c(as.character(X_name$V2),'Act','ID_ofVolunteer')
-  all_data
+  write.table(all_data,'all_data.txt',quote = FALSE)
 }
