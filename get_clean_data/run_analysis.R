@@ -23,4 +23,6 @@ run_analysis<-function(directory = 'UCI HAR Dataset')
   #and use them
   names(all_data)<-c(as.character(X_name$V2),'Act','ID_ofVolunteer')
   write.table(all_data,'all_data.txt',quote = FALSE,row.name=FALSE)
+  need_data<-all_data[,index]
+  write.table(need_data,'need_data.txt',quote = FALSE,row.names = FALSE)
 }
